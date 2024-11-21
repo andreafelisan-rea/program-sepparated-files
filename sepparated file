@@ -1,0 +1,25 @@
+//header
+#ifndef FUNCTION_H_INCLUDED
+#define FUNCTION_H_INCLUDED
+float celToFahren(float celsius)
+#endif
+
+//first file
+#include "function.h"
+float celToFahren(float celsius){
+return(celsius*9/5)+ 32;
+}
+
+//second file 
+#include<iostream>
+#include "function.h"
+using namespace std;
+
+int main(){
+float C,F;
+cout<<"Enter a temperature in C: ";
+cin>>C;
+F = celToFahren(C);
+cout<<"The temperature in F is: "<<F;
+
+}
